@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "email": "123@mecanico.com",
+      "password": "1234",
+      "role": "mecanico",
+      "id": 1
+    },
+    {
+      "email": "123@admin.com",
+      "password": "12345",
+      "role": "admin",
+      "id": 2
+    }
+  ],
+  "revision": [
+    {
+      "id": "1",
+      "placa": "pbz-1633",
+      "descripcion": "Llantas lisas,Fuga de aceite"
+    },
+    {
+      "id": "3",
+      "placa": "ABC-1234",
+      "descripcion": "Neumáticos: Los neumáticos tienen una profundidad de dibujo adecuada y no presentan desgaste irregular."
+    },
+    {
+      "id": "4",
+      "placa": "KHYDS-75",
+      "descripcion": "Interior: El interior del vehículo está limpio y en buen estado. Todos los sistemas (aire acondicionado, radio, etc.) funcionan correctamente."
+    }
+  ]
+}

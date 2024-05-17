@@ -1,0 +1,26 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Placa</th>
+        <th>Descripcion</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+        @for (item of vehiculos; track item) {
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.placa}}</td>
+                <td>{{item.descripcion}}</td>
+                <td>
+                    <button class="btn btn-success" [routerLink]="['/editar-revision',item.id]"> Editar </button>
+                    <button class="btn btn-danger" (click)="eliminar(item.id)"> Eliminar </button>
+                </td>
+              </tr>
+             
+        }
+     
+      
+    </tbody>
+  </table>

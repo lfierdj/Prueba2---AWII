@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Contraseña </th>
+        <th>Acciones </th>
+      </tr>
+    </thead>
+    <tbody>
+        @for (item of users; track item) {
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.password}}</td>
+                <td>
+                    <button class="btn btn-success" [routerLink]="['/editar-user',item.id]"> Editar </button>
+                    <button class="btn btn-danger" (click)="eliminar(item.id)"> Eliminar </button>
+                </td>
+              </tr>
+        }
+      
+     
+    </tbody>
+  </table>

@@ -1,0 +1,14 @@
+<form (ngSubmit)="editar( formulario )" #formulario = "ngForm">
+    <label for="">Ingresar ID</label>
+    <input type="text" name="id" [(ngModel)]="id" class="form-control">
+
+    <label for="">Ingresar el numero placa del vehiculo</label>
+    <input type="text" name="placa"  [(ngModel)]="vehiculos.placa" class="form-control">
+
+    <label for="">Ingresar la descripcion de la revision</label>
+    <input type="text" name="descripcion"  [(ngModel)]="vehiculos.descripcion" class="form-control">
+
+    
+    
+    <button type="submit" >Guardar</button>
+</form>
